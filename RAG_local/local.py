@@ -18,7 +18,7 @@ print("All libraries loaded successfully!")
 
 
 # Load your CSV file
-csv_file_path = r"C:\Users\prabh\Desktop\RAG_local\Medical_dataset_from_Kagle.csv"  
+csv_file_path = r"<Give your csv path here>"  
 # Replace with your actual file path
 data_frame = pd.read_csv(csv_file_path, nrows=100)
 print(f"Loaded {len(data_frame)} rows (limited to 100)")
@@ -137,4 +137,5 @@ while True:
         answer = rag_pipeline.invoke(user_question)
         print(f"AI: {answer}\n")
     except Exception as e:
+
         print(f"⚠️ Error: {e}\n")
